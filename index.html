@@ -62,6 +62,33 @@
             margin-right: 10px;
             color: #004d40;
         }
+        /* Cheers button styles */
+        .cheers-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            color: #004d40;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .cheers-button:hover {
+            background-color: #ffb300;
+        }
+
+        /* Cheers message styles */
+        .cheers-message {
+            display: none;
+            font-size: 24px;
+            color: #004d40;
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -138,10 +165,21 @@
             <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/hemel-ch0wdhury/">linkedin.com/in/hemel-ch0wdhury/</a></p>
             <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/nasablueberry">github.com/nasablueberry</a></p>
         </div>
+
+        <!-- Cheers Button and Message -->
+        <button class="cheers-button" onclick="showCheers()">Cheers!</button>
+        <p id="cheers-message" class="cheers-message">Cheers! 🥂</p>
     </section>
 
     <footer>
         <p>&copy; 2025 Md. Hemel Uddin Chowdhury. All rights reserved.</p>
     </footer>
+
+    <script>
+        function showCheers() {
+            // Display the Cheers message
+            document.getElementById("cheers-message").style.display = "block";
+        }
+    </script>
 </body>
 </html>
