@@ -91,6 +91,37 @@
             text-align: center;
             font-weight: bold;
         }
+
+        /* Center the button on the page */
+        #tap-button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px; /* Adjust this value to place it where you'd like */
+        }
+
+        .tap-button {
+            padding: 15px 30px;
+            background-color: #ffcc00;
+            color: #004d40;
+            font-size: 20px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+        }
+
+        .tap-button:hover {
+            background-color: #ffb300;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .tap-button:focus {
+            outline: none;
+        }
     </style>
 </head>
 <body>
@@ -168,9 +199,12 @@
             <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/nasablueberry">github.com/nasablueberry</a></p>
         </div>
 
-        <!-- Cheers Button and Message -->
-        <button class="cheers-button" onclick="showCheers()">Cheers!</button>
-        <p id="cheers-message" class="cheers-message">Cheers! 🥂</p>
+        <!-- Centered TAP ON ME Button -->
+        <div id="tap-button-container">
+            <button class="tap-button" onclick="showCheers()">TAP ON ME FOR SURPRISE!</button>
+        </div>
+
+        <p id="cheers-message" class="cheers-message">Thank you so much for visiting my BASIC CV :), Cheers! 🥂</p>
     </section>
 
     <footer>
