@@ -6,6 +6,7 @@
     <title>Md. Hemel Uddin Chowdhury - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script> <!-- Adding Confetti Library -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,6 +14,7 @@
             padding: 0;
             background-color: #eef2f3;
             color: #333;
+            overflow-x: hidden; /* Prevents horizontal scrolling */
         }
         header {
             background: #004d40;
@@ -179,6 +181,13 @@
         function showCheers() {
             // Display the Cheers message
             document.getElementById("cheers-message").style.display = "block";
+            
+            // Trigger confetti animation
+            confetti({
+                particleCount: 100,
+                spread: 90,
+                origin: { y: 0.6 }  // Starting point for confetti
+            });
         }
     </script>
 </body>
