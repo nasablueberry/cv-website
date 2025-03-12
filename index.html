@@ -121,6 +121,18 @@
 
         .tap-button:focus {
             outline: none;
+            .my-blogs-button {
+    margin: 0 15px;
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.my-blogs-button:hover {
+    color: #004d40;
+}
+
         }
     </style>
 </head>
@@ -138,8 +150,11 @@
             <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
             <a href="#leadership"><i class="fas fa-users"></i> Leadership</a>
             <a href="#contact"><i class="fas fa-address-book"></i> Contact</a>
-        </nav>
+            <!-- New "My Blogs" Button -->
+            <a href="https://nasablueberry.github.io/myblogs/" target="_blank" class="my-blogs-button"><i class="fas fa-blog"></i> My Blogs</a>
+        </nav>        
     </header>
+    
 
     <section id="profile">
         <h2><i class="fas fa-user-circle"></i> Profile Statement</h2>
